@@ -1,0 +1,20 @@
+project:
+    type: website
+
+
+website:
+    title: "Sophie Qiu"
+    navbar:
+      left:
+        href: index.qmd
+        text: Home
+        href: projects/
+        text: Class Projects
+        href: personalprojects.qmd
+        text: Personal Projects
+
+formats:
+  html:
+    theme: cosmo
+    css: stules.css
+    toc: true
