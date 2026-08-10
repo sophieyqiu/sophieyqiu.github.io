@@ -1,0 +1,134 @@
+/* css styles */
+/* Removes the center line in the trestles template */
+.about-entity {
+  border-right: none !important;
+}
+
+/* Base state of the card */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover state of the card */
+.project-card:hover {
+  transform: translateY(-5px); /* Smoothly lifts the box upward */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; /* Makes the shadow deeper */
+}
+
+/* Custom Button Base */
+.custom-btn {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block; /* Essential so margin and padding apply correctly */
+  margin-bottom: 0.5rem; /* Adds vertical space below each button when stacked */
+  margin-right: 0.5rem;  /* Adds horizontal space if they wrap side-by-side */
+}
+
+/* Outlined Style */
+.btn-outline-custom {
+  background-color: #f4f5f7;
+  color: #111111 !important;
+  border: 2px solid #a0a0a0;
+}
+
+.btn-outline-custom:hover {
+  background-color: #e2e4e8;
+  border-color: #707070;
+}
+
+/* Solid Style */
+.btn-grey {
+  background-color: #444d66 !important;
+  color: #ffffff !important;
+  border: 2px solid transparent;
+}
+
+.btn-grey:hover {
+  background-color: #5b6582 !important;
+  color: #ffffff !important;
+}
+
+/* 3-Column Grid Container */
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 1.5rem;                           /* Space between columns */
+}
+
+/* Row 1: Text sections expand equally to match the longest paragraph */
+.grid-text-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Keeps buttons at the bottom of the text zone */
+  padding-bottom: 1.5rem;          /* Space between text/buttons and the images */
+}
+
+/* Row 2: Images are forced to start at the top edge of Row 2 */
+.grid-image-cell {
+  align-self: start; /* Locks image top to the start of Row 2 */
+}
+
+.grid-image-cell img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Captions sit under images without pushing the image tops */
+.col-caption {
+  font-size: 0.9rem;
+  color: #666666;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+/* 2-Column Grid Container */
+.custom-grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 1.5rem;                           /* Space between columns */
+}
+
+/* Row 1: Text sections expand equally to match the longest paragraph */
+.grid-text-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Keeps text anchored right under headings */
+  padding-bottom: 1.5rem;          /* Space between text/buttons and the images */
+}
+
+/* Row 2: Images are forced to start at the top edge of Row 2 */
+.grid-image-cell {
+  align-self: start; /* Locks image top to the start of Row 2 */
+}
+
+.grid-image-cell img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Captions sit under images without pushing the image tops */
+.col-caption {
+  font-size: 0.9rem;
+  color: #666666;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+/* Force vertical alignment on the text container in trestles */
+.about-trestles .about-contents,
+.about-trestles > section {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  height: 100% !important;
+}

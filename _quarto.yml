@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - files/
+
+website:
+  title: "Sophie Qiu"
+  navbar:
+    left:
+      - href: engineering_projects/index.qmd
+        text: Engineering Projects
+      - href: chemistry_projects/index.qmd
+        text: Chemistry Projects
+      - href: software_experience/index.qmd
+        text: Software Experience
+
+
+format:
+  html:
+    theme:
+      - sandstone
+    css: styles.css
+    toc: true
+
+
+

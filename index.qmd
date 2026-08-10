@@ -1,0 +1,26 @@
+---
+title: "Sophie Qiu"
+format:
+  html:
+    css: styles.css
+
+about:
+    template: trestles
+    image: images/profile-photo.jpg
+    image-shape: round
+    links: 
+        - icon: linkedin
+          text: LinkedIn
+          href: https://www.linkedin.com/in/sophie-qiu-738371319/
+        - icon: file-pdf
+          text: Resume
+          href: files/Sophie_Qiu_Resume.pdf
+
+---
+
+
+
+Hi! My name is Sophie, and I am a junior at Harvey Mudd College majoring in engineering. As part of the Harvey Mudd general engineering curriculum, I have experience in all fields of engineering, including materials engineering, digital circuits, analog circuits, design and manufacturing, and chemical engineering. I am passionate about exploring engineering in industry and gaining real world experience solving problems quickly and practically. 
+
+Outside of engineering, I love to play my violin, run, play soccer, and surf!
+
